@@ -10,7 +10,28 @@ This is the codebase for the paper "An Extensive Study on Adversarial Attack aga
 - [WIR-Random](https://github.com/ZZR0/ISSTA22-CodeStudy)
 - [StyleTransfer](https://github.com/mdrafiqulrabin/JavaTransformer)
 
-## Running Experiments
+## Experiments
+
+
+**Create Environment**
+
+```
+pip install -r requirements.txt
+```
+
+**Model Fine-tuning**
+
+Use `train.py` to train models. We also provide our pre-trained models [here](https://zenodo.org/record/7613725#.Y-G3SNpBxPY).
+
+Take an example:
+
+```
+cd CodeBERT/Clone-detection/code
+python train.py
+```
+
+**Running Existing Attacks**
+
 In our study, we employed six distinct datasets: BigCloneBench and Google Code Jam for clone detection, OWASP and Juliet Test Suite for vulnerability detection, and CodeSearchNet and TLCodeSum for code summarization. Among them, BigCloneBench, OWASP and CodeSearchNet are used for pre-study, and all six datasets are used for the evaluation of our approach.
 
 For pre-study, you should download the Dataset and Model from [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY) and place the file in the appropriate path. In Renodo the Dataset and Model are placed in the directory that corresponds to the code.
@@ -22,7 +43,7 @@ cd CodeBERT/Clone-detection/attack
 python run_xxx.py
 ```
 
-The`run_xxx.py` here can be `run_mhm.py`, `run_alert.py`, `run_style.py`, `run_wir_random.py`,`run_beam.py`
+The `run_xxx.py` here can be `run_mhm.py`, `run_alert.py`, `run_style.py`, `run_wir_random.py`, `run_beam.py`
 
 Take `run_mhm.py`  as an example:
 
@@ -49,15 +70,15 @@ Run experiments on other tasks of other models as well.
 
 `./CodeBERT/` contains code for the CodeBERT experiment and `./CodeGPT` contains code for CodeGPT experiment and  `./PLBART ` contains code for PLBART experiment.
 
-**ACCENT**
+**Running ACCENT**
 
 The attack approach ACCENT can refer to [ACCENT](https://github.com/zhangxq-1/ACCENT-repository)'s experimental run description.
 
 > Note: in the path ACCENT/Clone-detection and ACCENT/Vulnerability-detection, the directory `evaluation/`, `c2nl` and `python_parser`  are the same as directory of the same name under ACCENT/Code-summarization.
 
-**Evaluation**
+**Evaluation Our Approach**
 
-For the evaluation of our approach, the code and results pertaining to the datasets BigCloneBench, OWASP, and CodeSearchNet are available in [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). For model training and the implementation of attacks on the other three datasets is consistent with the code corresponding to the above datasets. One simply needs to modify the line of code loading the data, as seen in the parameter `eval_data_file` in the above `run_xxx.py`. We have placed these three datasets, along with their attack results, under the directory `Dataset and Result/`.
+For the evaluation of our approach, you should run the `attack_beam.py`. The code and results pertaining to the datasets BigCloneBench, OWASP, and CodeSearchNet are available in [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). For model training and the implementation of attacks on the other three datasets is consistent with the code corresponding to the above datasets. One simply needs to modify the line of code loading the data, as seen in the parameter `eval_data_file` in the above `run_xxx.py`. We have placed these three datasets, along with their attack results, under the directory `Dataset and Result/`.
 
 ## Target Models and Datasets
 
