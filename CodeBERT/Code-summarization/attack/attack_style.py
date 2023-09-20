@@ -29,7 +29,7 @@ from utils import set_seed
 from model import Seq2Seq
 from utils import Recorder_summary_style
 from run import TextDataset, convert_examples_to_features, read_examples
-from attacker_bk import Style_Attacker, eval_bleu, get_transfered_code, get_new_example, eval_bleu
+from attacker import Style_Attacker, eval_bleu, get_transfered_code, get_new_example, eval_bleu
 from transformers import RobertaForMaskedLM
 from transformers import (RobertaConfig, RobertaModel, RobertaTokenizer)
 from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler,TensorDataset

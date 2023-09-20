@@ -26,7 +26,7 @@ from run import TextDataset
 from utils import CodeDataset
 from utils import set_seed
 from utils import Recorder_style
-from attacker_bk import Style_Attacker, get_code_pairs, get_transfered_code
+from attacker import Style_Attacker, get_code_pairs, get_transfered_code
 from transformers import (RobertaForMaskedLM, RobertaConfig, RobertaModel, RobertaTokenizer)
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
