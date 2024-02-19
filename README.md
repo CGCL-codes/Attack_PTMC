@@ -34,7 +34,7 @@ python train.py
 
 In our study, we employed six distinct datasets: BigCloneBench and Google Code Jam for clone detection, OWASP and Juliet Test Suite for vulnerability detection, and CodeSearchNet and TLCodeSum for code summarization. Among them, BigCloneBench, OWASP and CodeSearchNet are used for pre-study, and all six datasets are used for the evaluation of our approach.
 
-For pre-study, you should download the Dataset and Model from [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY) and place the file in the appropriate path. In Renodo the Dataset and Model are placed in the directory that corresponds to the code.
+For pre-study, you should download the Dataset and Model from [Zenodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY) and place the file in the appropriate path. In Zenodo the Dataset and Model are placed in the directory that corresponds to the code.
 
 Take an example:
 
@@ -78,13 +78,13 @@ The attack approach ACCENT can refer to [ACCENT](https://github.com/zhangxq-1/AC
 
 **Evaluation Our Approach**
 
-For the evaluation of our approach, you should run the `attack_beam.py`. The code and results pertaining to the datasets BigCloneBench, OWASP, and CodeSearchNet are available in [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). For model training and the implementation of attacks on the other three datasets is consistent with the code corresponding to the above datasets. One simply needs to modify the line of code loading the data, as seen in the parameter `eval_data_file` in the above `run_xxx.py`. We have placed these three datasets, along with their attack results, under the directory `Dataset and Result/`.
+For the evaluation of our approach, you should run the `attack_beam.py`. The code and results pertaining to the datasets BigCloneBench, OWASP, and CodeSearchNet are available in [Zenodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). For model training and the implementation of attacks on the other three datasets is consistent with the code corresponding to the above datasets. One simply needs to modify the line of code loading the data, as seen in the parameter `eval_data_file` in the above `run_xxx.py`. We have placed these three datasets, along with their attack results, under the directory `Dataset and Result/`.
 
 ## Target Models and Datasets
 
 ### Models
 
-The pre-trained models can be downloaded from this [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). After decompressing this file, the folder structure is as follows.
+The pre-trained models can be downloaded from this [Zenodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). After decompressing this file, the folder structure is as follows.
 
 ```
 CodeBERT/
@@ -118,7 +118,7 @@ PLBART/
 
 ### Datasets and Results
 
-The datasets and results can be downloaded from this [Renodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). After decompressing this file, the folder structure is as follows.
+The datasets and results can be downloaded from this [Zenodo](https://zenodo.org/record/7613725#.Y-G3SNpBxPY). After decompressing this file, the folder structure is as follows.
 
 ```
 CodeBERT/
